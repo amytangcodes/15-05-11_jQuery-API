@@ -1,0 +1,8 @@
+var myApp = {};
+
+myApp.twitter = this is a method
+
+twitter would be called the property
+
+widgetApp.init = function(){ <-- method
+

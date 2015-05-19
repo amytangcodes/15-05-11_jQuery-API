@@ -1,0 +1,123 @@
+//TOP
+// Font ------------------------------------------
+$font1: 'Abril Fatface', cursive;
+$font2: 'Lato', sans-serif;
+
+// Color Palette ------------------------------------------
+
+//Background Color 
+$bgColor-1: #2c3e50;  		//midnightblue
+$bgColor-2: #d35400;		//pumpkin
+$bgColor-3: #e67e22;		//carrot
+
+// Font Colors
+$color-1: #fff;				//white
+$color-2: #e67e22;			//carrot
+$color-3: #2c3e50;  		//midnightblue
+
+// btn Colors
+$btncolor-1: #f1c40f;		//sunflower
+
+// Imports ------------------------------------------
+@import "normalize";
+
+// Primary style ------------------------------------------
+
+body {
+	font-family: $font2;
+	color: $color-2;
+	background: $bgColor-1;
+	height: 100vh;
+	letter-spacing: 1px;
+}
+
+h1 {
+	font-family: $font1;
+	font-size: 50px;
+	text-align: center;
+	margin: 5%;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.userInput {
+	font-weight: 800;
+	color: $color-3;
+	font-size: 20px;
+	border: 1px solid $color-2;
+	padding-top: 50px;
+	margin: 0 auto;
+	width: 100%;
+	background: url(../images/background.jpg) center fixed;
+	background-size: cover;
+	height: 500px;
+}
+
+.choice {
+	margin: 60px 80px;
+}
+
+select {
+	border-radius: 3px;
+	background: $bgColor-3;
+	color: $color-3;
+	font-weight: 700;
+	margin-left: 20px;
+	padding: 10px 15px;
+	border: 2px solid $color-2;
+	text-transform: uppercase;
+}
+
+button {
+	margin-left: 80px;
+	padding: 20px 25px;
+	border: 1px solid $color-2;
+	border-radius: 2px;
+	background: $bgColor-1;
+	color: $color-2;
+	font-weight: 600;
+	font-size: 30px;
+	letter-spacing: 5px;
+	// text-transform: uppercase;
+	&:hover {
+		background: $bgColor-3;
+		color: $color-3;
+	}
+}
+
+.recipe {
+	padding: 20px 50px;
+	border: 2px solid $color-2;
+	margin-bottom: 10px;
+	background: #ecf0f1;
+	h2 {
+		margin: 30px;
+	}
+	img {
+		border: 2px solid $color-2;		
+		float: left;
+		margin: 30px;
+	}
+	ul {
+		clear: both;
+		-moz-column-count: 2;
+	   	-moz-column-gap: 20px;
+	   	-webkit-column-count: 2;
+	   	-webkit-column-gap: 20px;
+	   	column-count: 2;
+	   	column-gap: 20px;
+	}
+}
+
+.restaurants {
+	padding: 0 50px;
+	border: 2px solid $color-2;
+	margin-bottom: 10px;
+	background: #ecf0f1;
+}

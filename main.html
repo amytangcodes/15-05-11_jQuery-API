@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Food Source</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400|Abril+Fatface' rel='stylesheet' type='text/css'>
+	<link type="image/png" href="images/egg_and_bacon.jpg" rel="icon">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<header>
+		<div class="wrapper">			
+			<h1 id="title">Who's Cookin' Tonight?</h1>
+			<div class="userInput">
+				<div class="choice">
+					<label for="mealType">What Meal Of The Day?</label>
+					<select name="mealType" id="mealType">
+						<option value="course^course-Breakfast and Brunch" data-type="breakfast">Breakfast</option>
+						<option value="course^course-Lunch and Snacks" data-type="lunch">Lunch</option>
+						<option value="course^course-Main Dishes" data-type="dinner">Dinner</option>
+						<option value="course^course-Desserts" data-type="dessert">Dessert</option>
+					</select>	
+				</div><!-- End of choice -->
+
+				<div class="choice">	
+					<label for="inOut">Make or Go Out?</label>
+					<select name="inOut" id="inOut">
+						<option value="make">Make</option>
+						<option value="goOut">Let's Go Out!</option>
+					</select>	
+				</div><!-- End of choice	 -->
+				
+				<button id="submit"><i class="fa fa-cutlery"></i></button>
+			</div><!-- End of userInput -->
+		</div><!-- End of wrapper -->
+	</header>
+	
+	<main>
+		<div class="wrapper" id="meal"></div>
+	</main>
+
+<!-- SCRIPT ITEMS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="app.js"></script>
+
+</body>
+</html>
